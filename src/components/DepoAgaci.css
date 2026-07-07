@@ -1,0 +1,125 @@
+.depo-agaci {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.agac-dal-grubu {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.agac-node {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.agac-node-ana {
+  background: rgba(91, 124, 255, 0.06);
+  border-color: rgba(91, 124, 255, 0.35);
+}
+
+.agac-node-sahipsiz {
+  background: var(--surface);
+  border-color: var(--border);
+  border-style: dashed;
+}
+
+.agac-node.pasif {
+  opacity: 0.6;
+}
+
+.agac-node-tur {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  background: rgba(91, 124, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.agac-node-ad {
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.agac-node-kod {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.agac-altlar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  padding-left: 28px;
+}
+
+.agac-node-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.agac-baglanti {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-left: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  border-bottom-left-radius: 8px;
+  margin-top: -14px;
+}
+
+.agac-node-wrapper .agac-node {
+  flex: 1;
+}
+
+.aktif-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  margin-left: auto;
+}
+
+.aktif-badge.aktif {
+  color: #15803d;
+}
+
+.aktif-badge.pasif {
+  color: var(--muted);
+}
+
+.aktif-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: currentColor;
+}
+
+@media (max-width: 560px) {
+  .agac-altlar {
+    padding-left: 12px;
+  }
+
+  .agac-baglanti {
+    width: 12px;
+  }
+}

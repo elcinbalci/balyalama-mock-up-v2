@@ -1,0 +1,289 @@
+.hvi-new-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.hvi-new-content {
+  padding: 28px 32px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  gap: 4px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mode-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.hvi-new-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(91, 124, 255, 0.14);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.cancel-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: var(--primary-dark);
+}
+
+.success-msg {
+  color: #15803d;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.excel-steps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.excel-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.excel-step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.excel-step-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.excel-step-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  margin: 0 8px;
+  margin-bottom: 28px;
+}
+
+.excel-hint {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.hvi-tablo-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hvi-tablo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hvi-tablo-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.hvi-tablo-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.hvi-tablo-scroll {
+  overflow: auto;
+  max-height: 520px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.hvi-tablo {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.85rem;
+  min-width: 1600px;
+  width: 100%;
+}
+
+.hvi-tablo thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.hvi-tablo td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.hvi-tablo tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.hvi-tablo .sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: white;
+  min-width: 160px;
+}
+
+.hvi-tablo thead .sticky-col {
+  z-index: 3;
+  background: var(--surface);
+}
+
+.satir-balya-id {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.82rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hvi-tablo input {
+  width: 100%;
+  min-width: 90px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 0.82rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hvi-tablo input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(91, 124, 255, 0.14);
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .excel-step-label {
+    white-space: normal;
+    text-align: center;
+  }
+}

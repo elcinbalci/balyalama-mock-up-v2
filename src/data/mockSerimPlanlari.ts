@@ -1,0 +1,40 @@
+import type { SerimPlani } from '../types/domain';
+
+export const mockSerimPlanlari: SerimPlani[] = [
+  {
+    serimId: 'SRM-003',
+    lotNo: 'LOT202600149',
+    onSerimIdler: ['ONS-002'],
+    x: 1,
+    y: 1,
+    toplamBalya: 1,
+    detay: [{ balyaId: 'BLY-000149-001', kumeId: 'KUME-005', xPozisyon: 1, yPozisyon: 1, siraNo: 1 }],
+    durum: 'Tamamlandı',
+    olusturmaTarihi: '2026-06-23 08:30',
+    olusturanKullanici: 'Ahmet Yılmaz',
+  },
+  {
+    serimId: 'SRM-009',
+    lotNo: 'LOT202600148',
+    onSerimIdler: ['ONS-006'],
+    x: 1,
+    y: 1,
+    toplamBalya: 1,
+    detay: [{ balyaId: 'BLY-000148-001', kumeId: 'KUME-011', xPozisyon: 1, yPozisyon: 1, siraNo: 1 }],
+    durum: 'Üretimde',
+    olusturmaTarihi: '2026-07-01 10:05',
+    olusturanKullanici: 'Ahmet Yılmaz',
+  },
+  {
+    serimId: 'SRM-011',
+    lotNo: 'LOT202600145',
+    onSerimIdler: ['ONS-008'],
+    x: 1,
+    y: 1,
+    toplamBalya: 1,
+    detay: [{ balyaId: 'BLY-000145-001', kumeId: 'KUME-014', xPozisyon: 1, yPozisyon: 1, siraNo: 1 }],
+    durum: 'Tamamlandı',
+    olusturmaTarihi: '2026-07-06 09:45',
+    olusturanKullanici: 'Ahmet Yılmaz',
+  },
+];

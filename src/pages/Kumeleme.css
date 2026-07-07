@@ -1,0 +1,146 @@
+.kumeleme-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.kumeleme-content {
+  padding: 28px 32px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.kumeleme-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kumeleme-tolerans-bilgisi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.tolerans-baslik {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.tolerans-satirlari {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.dinamik-kontrol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bekleyen-bilgisi {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.bekleyen-bilgisi strong {
+  color: var(--text);
+}
+
+.calistir-button {
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.calistir-button:disabled {
+  background: var(--border);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.calistir-button:not(:disabled):hover {
+  background: var(--primary-dark);
+}
+
+.hesaplaniyor-mesaji {
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 20px;
+}
+
+.kume-kartlari {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.kume-karti {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.kume-karti h3 {
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-size: 1.05rem;
+}
+
+.kume-balya-sayisi {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.kume-ortalama {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.kume-ortalama-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+}
+
+.kume-araligi {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.bos-mesaj {
+  color: var(--muted);
+  padding: 32px;
+  text-align: center;
+}
+
+.success-msg {
+  color: #15803d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}

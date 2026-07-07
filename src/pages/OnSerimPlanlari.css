@@ -1,0 +1,332 @@
+.on-serim-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.on-serim-content {
+  padding: 28px 32px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.on-serim-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panel-satiri {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.panel-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  min-width: 80px;
+}
+
+.plan-tipi-secim {
+  display: flex;
+  gap: 8px;
+}
+
+.plan-chip {
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.plan-chip.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.on-serim-panel select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  font-weight: 600;
+  min-width: 200px;
+}
+
+.plan-olustur-button {
+  align-self: flex-start;
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.plan-olustur-button:hover {
+  background: var(--primary-dark);
+}
+
+.sonuc-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.sonuc-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.ozet-satiri {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.ozet-satiri strong {
+  color: var(--text);
+}
+
+.sonuc-table-wrapper {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.sonuc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.sonuc-table th {
+  text-align: left;
+  padding: 14px 18px;
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+.sonuc-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sonuc-table tr:last-child td {
+  border-bottom: none;
+}
+
+.empty-row {
+  text-align: center;
+  color: var(--muted);
+  padding: 32px !important;
+}
+
+.uygun-balya-bilgisi {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.uygun-balya-bilgisi strong {
+  color: var(--text);
+}
+
+.hata-msg {
+  color: #b91c1c;
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.plan-gecmisi-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.plan-gecmisi-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.bos-mesaj {
+  color: var(--muted);
+  text-align: center;
+  padding: 24px;
+}
+
+.lot-toplam-bilgisi {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.panel-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bos-mesaj-inline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.kume-secim-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+.kume-secim-satiri {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.kume-secim-satiri:last-child {
+  border-bottom: none;
+}
+
+.kume-secim-satiri input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.kume-secim-id {
+  font-weight: 700;
+  color: var(--text);
+  min-width: 100px;
+}
+
+.kume-secim-sayi {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.ozel-sayi-input {
+  width: 90px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-weight: 700;
+}
+
+.on-serim-adi-input {
+  flex: 1;
+  min-width: 240px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.plan-toplam-bilgisi {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.on-serim-liste-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.on-serim-liste-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.on-serim-liste-header .plan-olustur-button {
+  align-self: auto;
+}
+
+.on-serim-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 24, 48, 0.55);
+  display: grid;
+  place-items: center;
+  z-index: 50;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.on-serim-modal-card {
+  background: var(--surface);
+  border-radius: 16px;
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.on-serim-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.on-serim-modal-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.on-serim-modal-kapat {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.on-serim-modal-kapat:hover {
+  color: var(--text);
+}
+
+.on-serim-modal-card .on-serim-panel {
+  border: none;
+  border-radius: 0;
+  padding: 28px;
+}

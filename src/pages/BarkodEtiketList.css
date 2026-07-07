@@ -1,0 +1,68 @@
+.barkod-etiket-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.barkod-etiket-content {
+  padding: 28px 32px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.barkod-etiket-toolbar {
+  margin-bottom: 16px;
+}
+
+.barkod-etiket-table-wrapper {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: auto;
+}
+
+.barkod-etiket-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.barkod-etiket-table th {
+  text-align: left;
+  padding: 14px 18px;
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.barkod-etiket-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.barkod-etiket-table tr:last-child td {
+  border-bottom: none;
+}
+
+.print-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.print-btn:hover {
+  background: var(--border);
+}
+
+.empty-row {
+  text-align: center;
+  color: var(--muted);
+  padding: 32px !important;
+}

@@ -1,0 +1,266 @@
+.kalite-motoru-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.kalite-motoru-content {
+  padding: 28px 32px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.kalite-motoru-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .kalite-motoru-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kalite-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.kalite-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.kalite-panel-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.link-button {
+  background: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.agirlik-satiri {
+  display: grid;
+  grid-template-columns: 1.2fr 2.2fr 70px;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.agirlik-satiri:last-child {
+  border-bottom: none;
+}
+
+.agirlik-satiri-baslik {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-bottom: 6px;
+}
+
+.agirlik-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.agirlik-referans {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.3;
+}
+
+.agirlik-input {
+  width: 100%;
+  text-align: right;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.agirlik-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.kalite-ozet-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.toplam-gosterge {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toplam-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.toplam-deger {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.toplam-mesaj {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.toplam-gosterge.gecerli .toplam-deger {
+  color: #0ca30c;
+}
+
+.toplam-gosterge.gecersiz .toplam-deger {
+  color: #d03b3b;
+}
+
+.hesapla-button {
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.hesapla-button:disabled {
+  background: var(--border);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.hesapla-button:not(:disabled):hover {
+  background: var(--primary-dark);
+}
+
+.sonuc-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.sonuc-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.sonuc-table-wrapper {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.sonuc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.sonuc-table th {
+  text-align: left;
+  padding: 14px 18px;
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+.sonuc-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sonuc-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fark-pozitif {
+  color: #0ca30c;
+  font-weight: 700;
+}
+
+.fark-negatif {
+  color: #d03b3b;
+  font-weight: 700;
+}
+
+.fark-notr {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.sinif-tablosu-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.sinif-tablosu-card h3 {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.sinif-tablosu-satirlari {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sinif-tablosu-satiri {
+  display: grid;
+  grid-template-columns: 12px 70px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.sinif-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.sinif-araligi {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.sinif-etiket {
+  font-weight: 700;
+}

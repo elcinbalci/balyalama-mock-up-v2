@@ -1,0 +1,43 @@
+:root {
+  --bg: #07111f;
+  --panel: #ffffff;
+  --text: #102033;
+  --muted: #64748b;
+  --primary: #5b7cff;
+  --primary-dark: #3f5fe0;
+  --border: #e5eaf2;
+  --surface: #f7f9fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--surface);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}

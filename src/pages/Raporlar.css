@@ -1,0 +1,195 @@
+.raporlar-page {
+  min-height: 100%;
+  background: var(--surface);
+}
+
+.raporlar-content {
+  padding: 28px 32px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.raporlar-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panel-satiri {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.panel-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  min-width: 90px;
+}
+
+.raporlar-panel select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  font-weight: 600;
+  min-width: 260px;
+}
+
+.bos-mesaj-inline {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.lot-serim-bilgisi {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.lot-serim-bilgisi strong {
+  color: var(--text);
+}
+
+.dagilim-ozet {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.dagilim-ozet-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dagilim-nokta {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.dagilim-sayi {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.dagilim-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.isi-haritasi-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.isi-haritasi-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.isi-haritasi-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.isi-haritasi-scroll {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  max-height: 640px;
+}
+
+.isi-haritasi-table {
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  min-width: 100%;
+}
+
+.isi-haritasi-table th,
+.isi-haritasi-table td {
+  padding: 10px 14px;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.isi-haritasi-table th {
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 2;
+  text-align: left;
+  font-weight: 600;
+}
+
+th.sticky-col {
+  z-index: 3;
+  background: var(--surface);
+}
+
+.sticky-col-2 {
+  position: sticky;
+  left: 130px;
+  background: white;
+  z-index: 2;
+  text-align: left;
+}
+
+th.sticky-col-2 {
+  z-index: 3;
+  background: var(--surface);
+}
+
+.isi-hucre {
+  color: #0b0b0b;
+  font-weight: 700;
+}
+
+.isi-hucre-bos {
+  color: var(--muted);
+  font-weight: 400;
+  background: var(--surface);
+}
+
+.empty-row {
+  text-align: center;
+  color: var(--muted);
+  padding: 32px !important;
+}
+
+.bos-mesaj {
+  color: var(--muted);
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+}
